@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TravelWithUs</title>
+
+<style>
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: linear-gradient(to right, #e0f7fa, #fce4ec);
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background: linear-gradient(to right, #0077b6, #00b4d8);
+    color: white;
+    align-items: center;
+  }
+
+  header h1 {
+    margin: 0;
+  }
+
+  button {
+    padding: 10px 15px;
+    border: none;
+    background: #ff6b6b;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  button:hover {
+    background: #ff3b3b;
+    transform: scale(1.05);
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+
+  .search-box {
+    margin: 20px auto;
+    max-width: 500px;
+  }
+
+  input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .card {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    color: gray;
+  }
+  .n1{
+    background-color: greenyellow;
+    
+  }
+
+  
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1> <img src="images-removebg-preview.png" alt="" width="100px" height="">Buddha Institute Of Management</h1>
+  <button>Apply Now</button>
+  <nav class="navbar">
+    <ul>
+     <button class="n1"><li><a href="CollegeEventWbsite.html">Home</a></li></button> 
+      <button class="n1"><li><a href="Course.html">Courses</a></li></button>
+      <button class="n1"><li><a href="Contact.html">Contact</a></li></button>
+    </ul>
+  </nav>
+</header>
+
+<div class="container">
+  <h2>Explore All the Available Courses</h2>
+  <p style="text-align:center;">All Professional Courses</p>
+
+  <div class="search-box">
+    <input type="text" id="search" placeholder="Search courses" onkeyup="filterDestinations()">
+  </div>
+
+  <div class="grid">
+
+    <!-- Courses -->
+    <div class="card" data-name="BBA"><h3>Bachelor of Buisness Adminstration</h3><p></p><button>For More Details</button></div>
+    <div class="card" data-name="MBA"><h3>Masters of Buisness Adminstration</h3><p></p><button>For More Details</button></div>
+    <div class="card" data-name="BCA"><h3>Bachelor of Computer Application</h3><p></p><button>For More Details</button></div>
+    <div class="card" data-name="MCA"><h3>Masters of Computer Application </h3><p></p><button>For More Details</button></div>
+    
+  </div>
+</div>
+
+<footer>
+  © 2026 LearnHub Education. All rights reserved.
+</footer>
+
+<script>
+function filterDestinations() {
+  const input = document.getElementById("search").value.toLowerCase();
+  const cards = document.querySelectorAll(".card");
+
+  cards.forEach(card => {
+    const name = card.getAttribute("data-name");
+    if (name.includes(input)) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+}
+</script>
+
+</body>
+</html>

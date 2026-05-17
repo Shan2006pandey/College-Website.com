@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - LearnHub</title>
+    <style>
+    :root {
+    --primary: #6366f1; /* Indigo */
+    --secondary: #4f46e5;
+    --bg: #f8fafc;
+    --card-bg: #ffffff;
+}
+
+body {
+    background-color: var(--bg);
+    font-family: 'Inter', sans-serif;
+}
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background: linear-gradient(to right, #0077b6, #00b4d8);
+    color: white;
+    align-items: center;
+  }
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.course-card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.course-img {
+    height: 180px;
+    background: #ff6b6b;
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: var(--primary);
+    font-weight: 800;
+}
+
+.enroll-btn {
+    background-color: var(--primary);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: background 0.2s;
+}
+
+.enroll-btn:hover {
+    background-color: var(--secondary);
+}
+
+  .n1{
+    background-color: greenyellow;
+    
+  }
+
+  #apply{
+    background-color: orangered;
+  }
+</style>
+
+</head>
+<body>
+
+    <header>
+  <h1> <img src="images-removebg-preview.png" alt="" width="100px" height="">Buddha Institute Of Management</h1>
+  <button id="apply">Apply Now</button>
+  <nav class="navbar">
+    <ul>
+     <button class="n1"><li><a href="CollegeEventWbsite.html">Home</a></li></button> 
+      <button class="n1"><li><a href="Course.html">Courses</a></li></button>
+      <button class="n1"><li><a href="Contact.html">Contact</a></li></button>
+    </ul>
+  </nav>
+</header>
+
+    <main class="container">
+        <h1 class="page-title">Available Courses</h1>
+        
+        <div class="course-grid">
+            <div class="course-card">
+                <div class="course-img">BCA</div>
+                <div class="course-info">
+                    <h3>Bachelor of Computer Application</h3>
+                    <p>Master HTML, CSS, JS, and React.</p>
+                    <span class="price">$49.99</span>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-img">MCA</div>
+                <div class="course-info">
+                    <h3>Masters of Computer Application</h3>
+                    <p>Learn Python, SQL, and Machine Learning.</p>
+                    <span class="price">$59.99</span>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-img">BBA</div>
+                <div class="course-info">
+                    <h3>Bachelor of Buisness Adminstration</h3>
+                    <p>Startup and Enterpreneurship</p>
+                    <span class="price">$39.99</span>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+            </div>
+             <div class="course-card">
+                <div class="course-img">MBA</div>
+                <div class="course-info">
+                    <h3>Masters of Buisness Adminstration</h3>
+                    <p>Strategic Focus,Practical Application</p>
+                    <span class="price">$79.99</span>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 LearnHub Education.</p>
+    </footer>
+
+</body>
+</html>

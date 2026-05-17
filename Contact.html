@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - LearnHub</title>
+    <style>
+        :root {
+    --dark: #1e293b;
+    --accent: #0ea5e9; /* Sky Blue */
+    --input-bg: #ffffff;
+}
+
+body {
+    background-color: #f1f5f9;
+}
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background: linear-gradient(to right, #0077b6, #00b4d8);
+    color: white;
+    align-items: center;
+  }
+
+/* Split Section Layout */
+.contact-section {
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05);
+    display: flex;
+    align-items: flex-start;
+}
+
+.contact-info {
+    border-right: 2px solid #e2e8f0;
+    padding-right: 3rem;
+}
+
+.contact-info h2 {
+    color: var(--dark);
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* Bonus: Animated underline for heading */
+.contact-info h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background: var(--accent);
+}
+
+/* Form Elements */
+input, textarea {
+    border: 2px solid #e2e8f0;
+    background-color: var(--input-bg);
+    transition: border-color 0.3s ease;
+}
+
+/* Bonus: Focus effect */
+input:focus, textarea:focus {
+    border-color: var(--accent);
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.1);
+}
+
+.submit-btn {
+    background: var(--dark);
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background: var(--accent);
+    letter-spacing: 1px;
+}
+
+.n1{
+    background-color: greenyellow;
+    
+  }
+
+#apply{
+    background-color: orangered;
+  }
+    </style>
+</head>
+<body>
+
+    <header>
+  <h1> <img src="images-removebg-preview.png" alt="" width="100px" height="">Buddha Institute Of Management</h1>
+  <button id="apply">Apply Now</button>
+  <nav class="navbar">
+    <ul>
+     <button class="n1"><li><a href="CollegeEventWbsite.html">Home</a></li></button> 
+      <button class="n1"><li><a href="Course.html">Courses</a></li></button>
+      <button class="n1"><li><a href="Contact.html">Contact</a></li></button>
+    </ul>
+  </nav>
+</header>
+
+
+    <main class="container">
+        <div class="contact-section">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p><strong>Email:</strong> bimgkp@gmail.com</p>
+                <p><strong>Phone:</strong> +91 xxxxxxxx</p>
+                <p><strong>Address:</strong> GIDA Sector 7,Colony 1,Gorakhpur,Uttarpradesh,273412</p>
+            </div>
+
+            <div class="contact-form-container">
+                <h2>Send a Message</h2>
+                <form id="contactForm">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <textarea id="message" rows="5" placeholder="How can we help you?" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 LearnHub Education.</p>
+    </footer>
+
+</body>
+</html>
